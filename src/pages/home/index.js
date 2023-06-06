@@ -16,32 +16,16 @@ export const Home = () => {
           <meta name="description" content={meta.description} />
         </Helmet>
         <div className="intro_sec d-block d-lg-flex align-items-center ">
-          <div className="h_bg-image order-1 order-lg-2 h-100 ">
-            <div
-              style={{
-                background: `linear-gradient(0.25turn, rgba(0,0,0,1), rgba(0,0,0,0))`,
-                width: "80vw",
-                height: "100vh",
-                transform: "translateX(-700px)",
-                position: "absolute",
-                zIndex: "50",
-              }}
-            ></div>
-            <img
-              style={{
-                height: "100vh",
-                transform: "translateX(-200px)",
-              }}
-              src={back}
-              alt=""
-            ></img>
+          <div className="back">
+            <div id="grad" />
+            <img id="background" src={back} alt=""></img>
           </div>
           <div
-            style={{ zIndex: "100" }}
-            className="text order-2 order-lg-1 h-100 d-lg-flex justify-content-center"
+            style={{ zIndex: "100", position: "absolute" }}
+            className="text order-1 order-lg-1 h-100 d-lg-flex justify-content-center"
           >
             <div className="align-self-center ">
-              <div className="intro mx-auto">
+              <div className="intro ">
                 <h2 className="mb-1x">Javier Herández</h2>
                 <hr />
                 <h2 className="mb-1x">{introdata.title}</h2>

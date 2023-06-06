@@ -17,7 +17,7 @@ const introdata = {
     third: "ENJOY",
   },
   description:
-    "Mi trayectoria profesional ha sido diversa y enriquecedora. Ahora, mi compromiso es dedicar todo mi tiempo y energía a perfeccionar mi oficio como programador, impulsado por el deseo de seguir creciendo y materializando proyectos sorprendentes",
+    "Throughout my diverse and enriching professional journey, I have consistently evolved to become a passionate full stack developer. My commitment is now entirely focused on leveraging my skills in front-end and back-end technologies to build intuitive, efficient, and impactful software solutions. I am driven by an insatiable desire to grow and bring remarkable projects to life.",
   your_img_url:
     "./assets/photo_5999151787694733785_w_topaz_denoise_enhance_faceai_sharpen.jpeg",
 };
