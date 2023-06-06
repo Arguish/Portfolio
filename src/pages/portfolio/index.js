@@ -19,19 +19,44 @@ export const Portfolio = () => {
             <hr className="t_border my-4 ml-0 text-left" />
           </Row>
         </Col>
-        <div className="mb-5 po_items_ho">
-          {dataportfolio.map((data, i) => {
-            return (
-              <div key={i} className="po_item">
-                <img style={{ objectFit: "cover" }} src={data.img} alt="" />
-                <div className="content">
-                  <p>{data.description}</p>
-                  <a href={data.link}>Ver Proyecto</a>
+        <>
+          <div
+            style={{ display: "flex", flexWrap: "wrap" }}
+            className=" po_items_ho"
+          >
+            {dataportfolio.map((data, i) => {
+              return (
+                <div key={i} className="po_item" style={{ width: 300 }}>
+                  <img style={{ objectFit: "cover" }} src={data.img} alt="" />
+                  <div style={{ color: "black", display: "flex" }}>
+                    {data.tech &&
+                      data.tech.map((a, i) => {
+                        return (
+                          <h6
+                            style={{
+                              margin: "1px auto",
+                              background: "gray",
+                              padding: "2px 7px",
+                              borderRadius: "25px",
+                            }}
+                            key={i}
+                          >
+                            {a}
+                          </h6>
+                        );
+                      })}
+                  </div>
+                  <div className="content">
+                    <p>{data.description}</p>
+                    <a href={data.link1}>Live Project</a>
+                    <hr />
+                    <a href={data.link2}>Git Repository</a>
+                  </div>
                 </div>
-              </div>
-            );
-          })}
-        </div>
+              );
+            })}
+          </div>
+        </>
       </Container>
     </HelmetProvider>
   );

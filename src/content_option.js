@@ -89,18 +89,31 @@ const services = [
 const dataportfolio = [
   {
     img: MF,
-    description: "MediaFast",
-    link: "https://mediafast.netlify.app",
+    description: "MediaFast (FRONT-END)",
+    link1: "https://mediafast.netlify.app",
+    link2: "https://github.com/Arguish/Media-Fast-Front",
+    tech: ["React", "MaterialUI"],
+  },
+  {
+    img: MF,
+    description: "MediaFast (BACK-END)",
+    link1: "https://mediafast.netlify.app",
+    link2: "https://github.com/Arguish/Media-Fast-app",
+    tech: ["NodeJS", "Sequelize", "MySQL"],
   },
   {
     img: ZB,
     description: "Zombie Game",
-    link: "https://arguish.github.io/Zombi0.1/",
+    link1: "https://arguish.github.io/Zombi0.1/",
+    link2: "https://github.com/Arguish/Zombi0.1",
+    tech: ["JavaScrypt", "HTML", "CSS", "Vanilla"],
   },
   {
     img: JC,
     description: "Componentes Experimentales",
-    link: "https://javcomponents.netlify.app/",
+    link1: "https://javcomponents.netlify.app/",
+    link2: "https://github.com/Arguish/React-Component-Workbench",
+    tech: ["Tailwind", "React", "FramerMotion"],
   },
 ];
 
