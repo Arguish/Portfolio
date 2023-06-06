@@ -33,6 +33,7 @@ export const Home = () => {
                 transform: "translateX(-200px)",
               }}
               src={back}
+              alt=""
             ></img>
           </div>
           <div
